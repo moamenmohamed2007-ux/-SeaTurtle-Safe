@@ -1,0 +1,270 @@
+body { 
+    margin: 0px;
+    font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: #0f1115; 
+    color: #e5e5e5;
+    text-align: center;
+}
+
+.main-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #056f77;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-sizing: border-box; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.nav-logo-image {
+    height: 35px; 
+    border-radius: 8px;
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #191717;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e5e5e5;
+}
+
+.dropdown {
+    position: relative; 
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #161a22;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 160px;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.25s ease;
+    list-style: none;
+    text-align: left;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    color: #e5e5e5;
+    font-size: 16px;
+    display: block;
+    padding: 10px 20px;
+}
+
+.dropdown-menu a:hover {
+    background: #2f4c92;
+    color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.form-card {
+    background: #161a22;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    
+    margin: 60px auto; 
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: 2px solid #00bcd4;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #00bcd4;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.awareness-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #00bcd4; 
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+.awareness-card {
+    background: #161a22; 
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 350px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+    text-align: left;
+    transition: all 0.3s ease; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.awareness-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+    background: #1c212b; 
+}
+
+.card-icon {
+    background: #2f4c92; 
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.card-icon img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); 
+}
+
+.awareness-card h3 {
+    font-size: 22px;
+    color: #e5e5e5;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+.awareness-card p {
+    font-size: 15px;
+    color: #e5e5e5;
+    opacity: 0.9; 
+    line-height: 1.6;
+    margin: 0 0 25px 0;
+}
+
+.card-link {
+    color: #00bcd4;
+    text-decoration: none; 
+    font-weight: 700;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.card-link:hover {
+    color: white; 
+    text-decoration: underline; 
+}
+
+.main-header.scrolled {
+    padding: 5px 0; 
+    background: rgba(5, 111, 119, 0.95); 
+    box-shadow: 0 2px 15px rgba(0,0,0,0.4);
+}
+
+.turtle-footer {
+    background: #374561;
+    padding: 30px 20px;
+    margin-top: 60px; 
+    border-top: 2px solid #056f77; /
+    text-decoration: bullets;
+    font-size: 14px;
+}
+
+.turtle-footer p {
+    margin-bottom: 
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #00bcd4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
